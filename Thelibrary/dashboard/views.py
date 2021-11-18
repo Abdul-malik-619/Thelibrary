@@ -315,6 +315,9 @@ def conversion(request):
 def calculator(request):
     return render(request,'dashboard/calc.html')
 
+def help(request):
+    return render(request,'dashboard/help.html')
+
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
